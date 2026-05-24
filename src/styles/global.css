@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+:root {
+	color: #f9fafb;
+	background:
+		radial-gradient(circle at top, rgba(249, 115, 22, 0.18), transparent 30%),
+		linear-gradient(180deg, #09090b 0%, #111827 100%);
+	font-family:
+		'DM Sans', 'Segoe UI', sans-serif;
+}
+
+body {
+	margin: 0;
+	min-width: 320px;
+	min-height: 100vh;
+	background: transparent;
+	color: #f9fafb;
+}
+
+#root {
+	min-height: 100vh;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator,
+input[type='datetime-local']::-webkit-calendar-picker-indicator {
+	cursor: pointer;
+	filter: invert(1);
+}
